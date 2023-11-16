@@ -98,7 +98,7 @@ func collectSystemInfo() (*SystemInfo, error) {
 // sendSystemInfo 将收集到的信息发送到监控端
 func sendSystemInfo(info *SystemInfo) {
 	jsonValue, _ := json.Marshal(info)
-	http.Post("http://monitor-server/api/collect", "application/json", bytes.NewBuffer(jsonValue))
+	http.Post("http://1.117.68.247:8080/api/collect", "application/json", bytes.NewBuffer(jsonValue))
 }
 
 func main() {
