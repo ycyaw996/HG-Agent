@@ -1,4 +1,4 @@
-package HG_Agent
+package main
 
 import (
 	"bytes"
